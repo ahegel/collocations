@@ -54,13 +54,13 @@ def get_keyword_collocations(corpus, keyword, windowsize=10, numresults=10):
     results = finder.nbest(bigram_measures.student_t, numresults)
     # print the results
     print("Top collocations for ", str(keyword), ":")
-    collocates = ''
+    collocations = ''
     for k, v in results:
         if k != keyword:
-            collocates += k + ' '
+            collocations += k + ' '
         else:
-            collocates += v + ' '
-    print(collocates, '\n')
+            collocations += v + ' '
+    print(collocations, '\n')
 
 
 # Replace this with your filename
