@@ -65,7 +65,7 @@ def get_keyword_collocations(corpus, keyword, windowsize=10, numresults=10):
             collocations += k + ' '
         else:
             collocations += v + ' '
-    print collocates + '\n'
+    print collocations + '\n'
 
 
 # Replace this with your filename
