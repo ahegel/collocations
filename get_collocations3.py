@@ -71,7 +71,8 @@ with open(infile) as tmpfile:
     data = tmpfile.read()
 
 # Clean the data
-data = data.translate(None, string.punctuation)  # remove punctuation
+translator = str.maketrans('', '', string.punctuation)
+data = data.translate(translator)  # remove punctuation
 data = "".join(i for i in data if ord(i) < 128)  # remove non-ascii characters
 
 # Get the top collocations for the entire corpus
