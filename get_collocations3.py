@@ -80,7 +80,7 @@ get_collocations(data)
 print(' ')
 
 # Replace this with a list of keywords you want to find collocations for
-words_of_interest = ["love", "death"]
+words_of_interest = ["love", "die"]
 
 # Get the top collocations for each keyword in the list above
 for word in words_of_interest:
