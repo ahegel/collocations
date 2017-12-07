@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+
+"""
+This program finds collocations in a corpus of text. It can find both the
+overall top collocations, and the collocations of keywords you enter manually.
+"""
+
 import string
 from nltk.tokenize import word_tokenize
 from nltk.collocations import BigramCollocationFinder

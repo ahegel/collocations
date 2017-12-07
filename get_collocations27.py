@@ -1,3 +1,5 @@
+#!/usr/bin/env python2.7
+
 """
 This program finds collocations in a corpus of text. It can find both the
 overall top collocations, and the collocations of keywords you enter manually.
